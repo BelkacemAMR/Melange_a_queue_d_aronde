@@ -1,20 +1,24 @@
 # Mélange à queue d'aronde
  
-Le programme est une fonction appelée "perfect_shuffle" qui prend une liste "deck" comme argument et retourne une nouvelle liste qui est un mélange parfait de la liste d'origine.
+Ce programme est une implémentation en Python d'un algorithme de mélange parfait (ou "perfect shuffle") pour un jeu de cartes. L'algorithme prend un deck de cartes en entrée et effectue un mélange en intercalant les cartes d'un demi-deck avec les cartes de l'autre demi-deck.
 
-Le fonctionnement de la fonction est le suivant :
+## Fonction
+### perfect_shuffle(deck)
+Cette fonction prend en entrée un deck de cartes, représenté sous forme de liste, et effectue un mélange parfait en intercalant les cartes d'un demi-deck avec les cartes de l'autre demi-deck. Elle renvoie le deck mélangé.
 
-La longueur de la liste d'entrée est calculée et stockée dans la variable "n".
+## Utilisation
+Pour utiliser cette fonction, vous pouvez simplement appeler la fonction perfect_shuffle() en passant en argument un deck de cartes sous forme de liste. Par exemple :
 
-Les deux moitiés de la liste d'entrée sont créées et stockées dans les variables "a" et "b" en utilisant la notation de tranche. La première moitié est de 0 à n//2 
-(division entière) et la seconde moitié est de n//2 à la fin.
+```python
+deck = [1, 2, 3, 4, 5, 6, 7, 8]
+shuffled_deck = perfect_shuffle(deck)
+print(shuffled_deck)
+```
 
-Une liste vide "mix" est créée pour stocker le mélange parfait.
+Ce code imprime le deck mélangé à l'aide de la fonction perfect_shuffle().
 
-Une boucle for est utilisée pour ajouter alternativement chaque élément de "a" et de "b" à "mix", en commençant par le premier élément de "a".
+## Contribution
+Les contributions sont les bienvenues ! Si vous souhaitez contribuer à ce programme, n'hésitez pas à créer une pull request avec vos modifications. Avant de contribuer, assurez-vous de respecter les meilleures pratiques de développement et de tester vos modifications pour vous assurer qu'elles fonctionnent correctement.
 
-Cela donne le mélange parfait de la liste d'entrée.
-
-La liste mix est retournée.
-
-En résumé, la fonction "perfect_shuffle" prend une liste et la divise en deux parties égales. Elle crée ensuite une nouvelle liste en alternant les éléments des deux parties dans un ordre spécifique pour obtenir un mélange parfait de la liste originale. La nouvelle liste est retournée en tant que sortie.
+## Licence
+Ce programme est sous licence MIT. Vous êtes libre de l'utiliser, de le modifier et de le distribuer selon les termes de la licence MIT. Veuillez consulter le fichier LICENSE pour plus d'informations sur les conditions de licence.
