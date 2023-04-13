@@ -12,7 +12,7 @@ def perfect_shuffle(deck):
 
     return mix
 
-# On teste :
+# TEST :
 
 # Créer une liste de cartes ou de nombres
 
